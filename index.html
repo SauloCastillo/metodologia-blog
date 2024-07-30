@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog FrontEnd</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container__header{
+            display:flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #f8f9fa;
+        }
+        .header__logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section__title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card__img {
+            width: 100%;
+            height: auto;
+        }
+        .card__content {
+            padding: 20px;
+        }
+        .card__title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .card__date,
+        .card__author {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .categories__list {
+            list-style: none;
+            padding: 0;
+        }
+        .categories__item {
+            padding: 10px 0;
+        }
+        .categories__link {
+            display: block;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            width: 300px;
+            height: 80px;
+        }
+    
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: left;
+        }
+        .head_desafio{
+            width: 50px;
+            height: 50px;
+        }
+        .rounded-div {
+            background-image: url('assets/img/logos/images.jpg') ;
+            background-size: cover;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 15px; /* Ajusta este valor para cambiar el radio de los bordes */
+            margin-top: 20px;
+        }
+        .logo_round{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .card__img__li{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header text-left">
+    <div class="container__header">
+        <div class="head_desafio rounded-div"></div>
+        <div class="header__logo">Blog FrontEnd</div>
+    </div>
+</header>
+
+<section class="section section--novedades">
+    <div class="container">
+        <h2 class="section__title">Novedades</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="assets/img/logos/bootstrap.jpg" class="card__img" alt="Novedades 1">
+                    <div class="card__content">
+                        <div class="card__date">24 Noviembre, 2022</div>
+                        <div class="card__title">Modifica el tema de Bootstrap con variables CSS</div>
+                        <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/logos/js-product-2.png" class="card__img" alt="Novedades 2">
+                        </div>
+                        <div class="col-8">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Herencia en JavaScript</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/logos/etiqueta_semantica.png" class="card__img" alt="Novedades 3">
+                        </div>
+                        <div class="col-8">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Etiquetas semánticas</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/logos/react.jpg" class="card__img" alt="Novedades 4">
+                        </div>
+                        <div class="col-8">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Componentes React</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--populares">
+    <div class="container">
+        <h2 class="section__title">Populares</h2>
+        <div class="row">
+            <div class="col-md-">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/logos/vue-components.png" class="card__img" alt="Populares 1">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Componentes Vue</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/logos/consumo_api_js.png" class="card__img" alt="Populares 2">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Consumo de API con JavaScript</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/logos/saas.png" class="card__img" alt="Populares 3">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">CSS reutilizable con Sass</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/logos/bootstrap.jpg" class="card__img" alt="Populares 4">
+                            <div class="card__content">
+                                <div class="card__date">24 Noviembre, 2022</div>
+                                <div class="card__title">Componentes Bootstrap</div>
+                                <div class="card__author"><img src="assets/img/logos/logo-adl-circular-verde.png" class="card__img logo_round" alt="Novedades 2">Desafío Latam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="container">
+                    <h2 class="section__title">Categorías</h2>
+                    <ul class="categories__list">
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/html5.png" class="card__img__li" alt="Populares 3">HTML</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/js.png" class="card__img__li" alt="Populares 3">JavaScript</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/CSS3_logo.svg.png" class="card__img__li" alt="Populares 3">CSS</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/reactjs_javascript_library_atom_atomic_react-512.webp" class="card__img__li" alt="Populares 3">React</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/vue.png" class="card__img__li" alt="Populares 3">Vue</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link"><img src="assets/img/logos/bootstrap_logo.png" class="card__img__li" alt="Populares 3">Bootstrap</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Ver todas las categorías ></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--categorias">
+    
+</section>
+
+<footer class="footer">
+    <div class="container_footer">
+        <table>
+
+        <div class="head_desafio rounded-div"></div>
+        <p>Blog FrontEnd - 2024 | Desafío Latam</p>
+        </table>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
